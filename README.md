@@ -1,2 +1,2 @@
-# jwales.github.io
-Personal site of Jenny (Wales) Brooks
+# hijennybrooks.github.io
+Personal site of Jenny Brooks
