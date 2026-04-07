@@ -6,7 +6,7 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background: linear-gradient(160deg, #d0eaff 0%, #e0f5f2 100%);
   background-attachment: fixed;
   min-height: 100vh;
   display: flex;
@@ -19,12 +19,7 @@ body {
 .card {
   max-width: 820px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
   padding: 64px;
-  box-shadow:
-    0 8px 40px rgba(0, 0, 0, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .intro {
@@ -41,7 +36,7 @@ h1 {
 
 .subtitle {
   font-size: 120%;
-  color: #555;
+  color: #333;
   max-width: 460px;
   margin: 0 auto;
 }
@@ -55,20 +50,20 @@ h1 {
   height: auto;
 }
 
-
 .section-text {
   margin-top: 20px;
 }
 
 .section-title {
+  font-size: 1.1rem;
   font-weight: 600;
   color: #222
 }
 
 .section-description {
-  font-size: 90%;
+  font-size: 1rem;
   line-height: 1.75em;
-  color: #555;
+  color: #333;
   margin-top: 10px;
 }
 
@@ -77,7 +72,7 @@ a {
   text-decoration: none;
   background:
     linear-gradient(currentColor, currentColor),
-    linear-gradient(90deg, #0093E9, #80D0C7);
+    linear-gradient(90deg, #4daed9, #6dbfb5);
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -92,10 +87,10 @@ a:hover {
   text-align: center;
   font-size: 90%;
   line-height: 1.75em;
-  color: #555;
+  color: #333;
   margin-top: 50px;
   padding-top: 50px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .footer strong {
@@ -123,7 +118,7 @@ a:hover {
 
   .section {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 48px;
   }
 
@@ -150,7 +145,6 @@ a:hover {
 @media (max-width: 680px) {
   .card {
     padding: 36px 24px;
-    border-radius: 16px;
   }
 
   .intro {
