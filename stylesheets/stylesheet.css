@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Switzer", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: linear-gradient(160deg, #d0eaff 0%, #e0f5f2 100%);
   background-attachment: fixed;
   min-height: 100vh;
@@ -35,8 +35,9 @@ h1 {
 }
 
 .subtitle {
-  font-size: 120%;
+  font-size: 1.3rem;
   color: #333;
+  line-height: 1.6;
   max-width: 460px;
   margin: 0 auto;
 }
@@ -55,15 +56,15 @@ h1 {
 }
 
 .section-title {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: #222
 }
 
 .section-description {
-  font-size: 1rem;
-  line-height: 1.75em;
-  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #444;
   margin-top: 10px;
 }
 
@@ -80,12 +81,12 @@ a {
 }
 
 a:hover {
-  background-size: 0 1px, 100% 1px;
+  background-size: 0 2px, 100% 2px;
 }
 
 .footer {
   text-align: center;
-  font-size: 90%;
+  font-size: 105%;
   line-height: 1.75em;
   color: #333;
   margin-top: 50px;
@@ -112,7 +113,7 @@ a:hover {
   }
 
   .subtitle {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     max-width: none;
   }
 
@@ -134,11 +135,11 @@ a:hover {
   }
 
   .section-title {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
   }
 
   .section-description {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 }
 
