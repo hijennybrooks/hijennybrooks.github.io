@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Making math accessible — Jenny Brooks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Making the Desmos calculator work for blind and low-vision students with Braille, audio trace, low vision, and tactile graphics support.">
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  </head>
+  <body>
+    <main class="card article">
+      <p class="article-back"><a href="/"><svg class="article-back-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Homepage</a></p>
+      <header class="intro">
+        <h1>Making math accessible</h1>
+        <p class="subtitle">Making the Desmos calculators work for blind and low-vision students.</p>
+      </header>
+
+      <div class="article-hero">
+        <div class="article-summary">
+          <h2 class="article-part-title">Summary</h2>
+          <p>
+            We spent years learning from blind and low-vision students, Teachers of the Visually Impaired (TVIs), and accessibility experts to improve the accessibility of the Desmos calculators. 
+            Each project was a new design challenge that required close partnership with our users, often in the absence of existing design patterns. 
+            Every piece of feedback we received and person who shared their perspective with us was such a gift. 
+            One of my favorite parts of improving accessibility is getting to learn from such an incredible community.
+          </p>
+          <p>
+            This work was led by two engineers, one of whom is blind. I collaborated with them closely as the designer.
+          </p>
+        </div>
+        <figure class="article-figure">
+          <div class="article-video">
+            <iframe
+              src="https://www.youtube.com/embed/EqqiqTkThi8?start=17"
+              title="Desmos graphing calculator with Braille accessibility features"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <figcaption class="article-caption">Learn more about the accessiblity features in the Desmos graphing calculator.</figcaption>
+        </figure>
+      </div>
+
+      <div class="article-body">
+        <section class="article-section">
+          <h2>Braille Mode</h2>
+          <div class="article-split">
+            <div class="article-split-text">
+              <p>
+                We were invited to share our work on the graphing calculator with students in the TVI program at San Francisco State University. These future teachers were incredible, learning how to best support students across grades and subjects. 
+                How might they best support students using a refreshable Braille display alongside their computer? How would the TVI know where a student made a mistake and invite them to try again? How would the TVI do this if they rarely used Nemeth, a Braille code specific to math?
+                With this in mind, we added typeset math alongside the Braille so someone working with a person using a refreshable Braille display could see the math on the screen.
+               </p> 
+              <p>
+                Bonus: I designed a Braille font for this project that we titled "Abraham" after Abraham Nemeth, the creator of Nemeth Braille.
+              </p>
+            </div>
+            <figure class="article-figure">
+              <img class="article-image" src="images/desmos-accessibility-features.png" alt="Desmos calculator with Nemeth Braille mode enabled, showing expressions in Braille dots and typeset math side by side, with a reference table mapping keyboard input to Nemeth and typeset output." />
+              <figcaption class="article-caption">Braille mode in the <a href="https://www.desmos.com/scientific">Desmos scientific calculator</a>.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="article-section">
+          <h2>Audio Trace</h2>
+          <p>
+            Students can explore graphs by ear. As they move along a curve, pitch represents the y-value — making it possible to trace functions, compare shapes, and notice features like intercepts and turning points without relying on sight.
+          </p>
+        </section>
+
+        <section class="article-section">
+          <h2>Low Vision</h2>
+          <p>
+            For students with low vision, the calculator supports adjustable contrast, larger text, and other display settings so expressions, graphs, and controls remain readable and usable across different visual needs.
+          </p>
+        </section>
+
+        <section class="article-section">
+          <h2>Tactile Graphics</h2>
+          <p>
+            Graphs can be exported for tactile embossers, giving students a physical way to feel the shape of a function. We worked with teachers and accessibility experts to make sure exported graphics were useful in the classroom — not just technically possible.
+          </p>
+        </section>
+      </div>
+
+      <footer class="footer">
+        Big fan of accessibility, snacks, little big details, and mountain sports. ⛰️✨
+        <br />
+        You can gmail me at <strong>hijennybrooks</strong>.
+      </footer>
+    </main>
+  </body>
+</html>
