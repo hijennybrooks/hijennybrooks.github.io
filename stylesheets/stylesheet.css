@@ -84,11 +84,28 @@ a:hover {
   background-size: 0 2px, 100% 2px;
 }
 
+.selected-work {
+  margin-top: 100px;
+}
+
+.selected-work-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 24px;
+}
+
+.selected-work-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
 .case-study-card {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 28px;
+  height: 100%;
   padding: 16px;
   border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -143,6 +160,25 @@ a:hover {
   margin-top: 6px;
 }
 
+.case-study-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.case-study-card-tags li {
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #2f5560;
+  background: rgba(109, 191, 181, 0.22);
+  border-radius: 999px;
+  padding: 5px 8px;
+}
+
 .footer {
   text-align: center;
   font-size: 105%;
@@ -151,6 +187,12 @@ a:hover {
   margin-top: 50px;
   padding-top: 50px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer-credit {
+  font-size: 0.8em;
+  margin-top: 1.5em;
+  font-style: italic;
 }
 
 .footer strong {
@@ -195,6 +237,30 @@ a:hover {
 
 .article .intro {
   margin-bottom: 40px;
+}
+
+.article .subtitle {
+  max-width: 40rem;
+}
+
+.article-quote {
+  max-width: 38rem;
+  margin: 18px auto 0;
+}
+
+.article-quote p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.article-quote footer {
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+
+.article-quote cite {
+  font-style: normal;
 }
 
 .article-hero {
@@ -414,6 +480,17 @@ a:hover {
   .section-description {
     font-size: 1.05rem;
   }
+
+  .selected-work-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .selected-work-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -434,6 +511,10 @@ a:hover {
   }
 
   .section + .section {
+    margin-top: 40px;
+  }
+
+  .selected-work {
     margin-top: 40px;
   }
 
