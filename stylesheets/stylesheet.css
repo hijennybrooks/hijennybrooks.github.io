@@ -419,14 +419,18 @@ a:hover {
 }
 
 .detail-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 20px;
 }
 
 .detail {
   display: flex;
   flex-direction: column;
+  width: max-content;
+  max-width: 100%;
+  min-width: 0;
   margin: 0;
   padding: 16px;
   border-radius: 12px;
@@ -447,7 +451,8 @@ a:hover {
 
 .detail-media {
   display: block;
-  width: 100%;
+  width: max-content;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   border-radius: 8px;
@@ -472,7 +477,8 @@ a:hover {
 
 .detail img,
 .detail-canvas {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
   display: block;
   border-radius: 8px;
@@ -598,14 +604,7 @@ a:hover {
   }
 
   .detail-grid {
-    grid-template-columns: 1fr 1fr;
     gap: 24px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .detail-grid {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
