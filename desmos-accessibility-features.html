@@ -5,28 +5,34 @@
     <title>Making math accessible — Jenny Brooks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Making the Desmos calculator work for blind and low-vision students with Braille, audio trace, low vision, and tactile graphics support.">
-    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
   </head>
   <body>
     <main class="card article">
-      <p class="article-back"><a href="/"><svg class="article-back-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Homepage</a></p>
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Making Math Accessible</li>
+        </ol>
+      </nav>
       <header class="intro">
         <h1>Making math accessible</h1>
-        <p class="subtitle">Crafting new experiences in the Desmos calculators support blind and low-vision students.</p>
+        <div class="subtitle">
+            <div>Crafting new experiences in the Desmos calculators</div>
+            to support blind and low-vision students.
+        </div>
       </header>
 
       <div class="article-hero">
         <div class="article-summary">
-          <h2 class="article-part-title">Summary</h2>
           <p>
-            We spent years learning from blind and low-vision students, Teachers of the Visually Impaired (TVIs), and accessibility experts to improve the accessibility of the Desmos calculators. 
-            Each project was a new design challenge that required close partnership with our users, often in the absence of existing design patterns. 
+            Two software engineers and I spent years learning from blind and low-vision students, Teachers of the Visually Impaired (TVIs), and accessibility experts to improve the accessibility of the Desmos calculators. 
+            Each project was a new design challenge that required close partnership with our users, often in the absence of existing accessible design patterns. 
             Every piece of feedback we received and person who shared their perspective with us was such a gift. 
             One of my favorite parts of improving accessibility is getting to learn from such an incredible community.
-          </p>
-          <p>
-            This work was led by two engineers, one of whom is blind. I collaborated with them closely as the designer.
           </p>
         </div>
         <figure class="article-figure">
@@ -48,8 +54,7 @@
           <div class="article-split">
             <div class="article-split-text">
               <p>
-                We were invited to share our work on the graphing calculator with students in the TVI program at San Francisco State University. These future teachers were incredible, learning how to best support students across grades and subjects. 
-                How might they best support students using a refreshable Braille display alongside their computer? How would the TVI know where a student made a mistake and invite them to try again? How would the TVI do this if they rarely used Nemeth, a Braille code specific to math?
+                How might they best support students using a refreshable Braille display alongside a computer? How would the TVI know where a student made a mistake and invite them to try again? How would the TVI do this if they rarely used Nemeth, a Braille code specific to math?
                 With this in mind, we added typeset math alongside the Braille so someone working with a person using a refreshable Braille display could see the math on the screen.
                </p> 
               <p>
@@ -65,12 +70,19 @@
 
         <section class="article-section">
           <h2>Audio Trace</h2>
-          <p>
-            This was an incredibly fun design challenge. How can you help a student understand a graph without being able to see it? We ultimately developed a mode called "audio trace" that allows a user to hear an audio representation of a graph, including different audio cues for intercepts and negative or positive values.
-          </p>
-          <p>
-          <a href="https://help.desmos.com/hc/en-us/articles/37064105800333-Audio-Trace">Learn more about audio trace</a>
-          </p>
+          <div class="article-split">
+            <div class="article-split-text">
+              <p>
+                This was an incredibly fun design challenge. How can you help a student understand a graph without being able to see it? We ultimately developed a mode called "audio trace" that allows a user to hear an audio representation of a graph, including different audio cues for intercepts and negative or positive values.
+              </p>
+            </div>
+            <figure class="article-figure">
+              <video class="article-image" controls playsinline preload="metadata" aria-label="Audio tracing the equation y equals x">
+                <source src="images/positive-slope-audio-trace.mp4" type="video/mp4">
+              </video>
+              <figcaption class="article-caption">Audio tracing the equation y=x. <a href="https://help.desmos.com/hc/en-us/articles/37064105800333-Audio-Trace">Hear more examples</a>.</figcaption>
+            </figure>
+          </div>
         </section>
 
         <section class="article-section">
@@ -90,9 +102,8 @@
       </div>
 
       <footer class="footer">
-        <p>Big fan of accessibility, snacks, <a href="/little-big-details.html">little big details</a>, and mountain sports.</p>
-        <p>🖃 hijennybrooks@gmail.com</p>
-        <p class="footer-credit">I wrote most of the code for this site with some speed boosts from Cursor.</p>
+        <p>Big fan of accessibility, snacks, little big details, and mountain sports.</p>
+        <p>Let's chat: hijennybrooks@gmail.com</p>
       </footer>
     </main>
   </body>

@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <title>Jenny Brooks Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
   </head>
   <body>
     <main class="card">
       <header class="intro">
         <h1>Hi there. I'm Jenny Brooks.</h1>
-        <p class="subtitle">I am a product design leader with 13 years of experience ranging from solo designer at a startup to leading design teams at larger organizations. I love creating powerful, flexible, and delightful user and team experiences and learning new things.</p>
+        <div class="subtitle">
+          <div>I am a product design leader with 13 years of experience ranging from solo designer at a startup to leading design teams at larger organizations. </div>
+          <div>I love creating powerful, flexible, and delightful user <div>and team experiences and learning new things.</div></div>
+        </div>
       </header>
 
       <div class="section">
@@ -33,26 +38,12 @@
       <section class="selected-work">
         <h2 class="selected-work-title">Selected Work</h2>
         <div class="selected-work-grid">
-          <a class="case-study-card" href="/cursor-design-team.html">
-            <img class="case-study-card-image" src="images/platform-prototype-playground.png" alt="Platform Prototype Playground showing prototype project cards with author and sort filters." />
-            <div class="case-study-card-body">
-              <p class="case-study-card-title">Bringing AI prototyping to the platform team</p>
-              <p class="case-study-card-description">How product managers and designers started using Cursor and what we learned along the way.</p>
-              <ul class="case-study-card-tags" aria-label="Categories">
-                <li>AI</li>
-                <li>Workflows</li>
-              </ul>
-            </div>
-          </a>
           <a class="case-study-card" href="/desmos-accessibility-features.html">
             <img class="case-study-card-image" src="images/desmos-accessibility-features.png" alt="Desmos calculator with Nemeth Braille mode enabled, showing expressions in Braille dots and typeset math side by side." />
             <div class="case-study-card-body">
-              <p class="case-study-card-title">Making math accessible</p>
-              <p class="case-study-card-description">Making the Desmos calculator work for blind and low-vision students with Nemeth Braille support.</p>
-              <ul class="case-study-card-tags" aria-label="Categories">
-                <li>Accessibility</li>
-                <li>Product Design</li>
-              </ul>
+              <p class="case-study-card-title">Making Math Accessible</p>
+              <p class="case-study-card-description">Crafting new experiences in the Desmos calculators to support blind and low-vision students.</p>
+              
             </div>
           </a>
           <a class="case-study-card" href="/digital-card-sorts.html">
@@ -60,18 +51,23 @@
             <div class="case-study-card-body">
               <p class="case-study-card-title">Digital Card Sorts</p>
               <p class="case-study-card-description">Creating a digital version of a physical classroom activity.</p>
-              <ul class="case-study-card-tags" aria-label="Categories">
-                <li>Product Design</li>
-              </ul>
+              
+            </div>
+          </a>
+          <a class="case-study-card" href="/teacher-dashboard-redesign.html">
+            <img class="case-study-card-image" src="images/teacher-dashboard-after.png" alt="Summary view of the redesigned Desmos teacher dashboard, with screen thumbnails across the top and a grid of student progress." />
+            <div class="case-study-card-body">
+              <p class="case-study-card-title">Teacher Dashboard Redesign</p>
+              <p class="case-study-card-description">Redesigning the Desmos activity dashboard so teachers can see the class at a glance.</p>
+              
             </div>
           </a>
         </div>
       </section>
 
       <footer class="footer">
-        <p>Big fan of accessibility, snacks, <a href="/little-big-details.html">little big details</a>, and mountain sports.</p>
-        <p>🖃 hijennybrooks@gmail.com</p>
-        <p class="footer-credit">I wrote most of the code for this site with some speed boosts from Cursor.</p>
+        <p>Big fan of accessibility, snacks, little big details, and mountain sports.</p>
+        <p>Let's chat: hijennybrooks@gmail.com</p>
       </footer>
     </main>
   </body>
