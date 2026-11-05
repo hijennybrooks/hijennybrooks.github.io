@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Jenny Brooks Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <script data-goatcounter="https://jennybdesigns.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
@@ -13,7 +15,10 @@
     <main class="card">
       <header class="intro">
         <h1>Hi there. I'm Jenny Brooks.</h1>
-        <p class="subtitle">I love creating powerful, flexible, and delightful user and team experiences.</p>
+        <div class="subtitle">
+          <div>I am a product design leader with 13 years of experience ranging from solo designer at a startup to leading design teams at larger organizations. </div>
+          <div>I love creating powerful, flexible, and delightful user <div>and team experiences and learning new things.</div></div>
+        </div>
       </header>
 
       <div class="section">
@@ -32,10 +37,39 @@
         </div>
       </div>
 
+      <section class="selected-work">
+        <h2 class="selected-work-title">Selected Work</h2>
+        <div class="selected-work-grid">
+          <a class="case-study-card" href="/desmos-accessibility-features.html">
+            <img class="case-study-card-image" src="images/desmos-accessibility-features.png" alt="Desmos calculator with Nemeth Braille mode enabled, showing expressions in Braille dots and typeset math side by side." />
+            <div class="case-study-card-body">
+              <p class="case-study-card-title">Making Math Accessible</p>
+              <p class="case-study-card-description">Crafting new experiences in the Desmos calculators to support blind and low-vision students.</p>
+              
+            </div>
+          </a>
+          <a class="case-study-card" href="/digital-card-sorts.html">
+            <img class="case-study-card-image" src="images/digital-card-sorts.png" alt="Card sort activity titled Scary or Fun, with activity cards placed near piles labeled Neither, Scary, Both, and Fun." />
+            <div class="case-study-card-body">
+              <p class="case-study-card-title">Digital Card Sorts</p>
+              <p class="case-study-card-description">Creating a digital version of a physical classroom activity.</p>
+              
+            </div>
+          </a>
+          <a class="case-study-card" href="/teacher-dashboard-redesign.html">
+            <img class="case-study-card-image" src="images/teacher-dashboard-after.png" alt="Summary view of the redesigned Desmos teacher dashboard, with screen thumbnails across the top and a grid of student progress." />
+            <div class="case-study-card-body">
+              <p class="case-study-card-title">Teacher Dashboard Redesign</p>
+              <p class="case-study-card-description">Redesigning the Desmos activity dashboard so teachers can see the class at a glance.</p>
+              
+            </div>
+          </a>
+        </div>
+      </section>
+
       <footer class="footer">
-        Big fan of accessibility, snacks, little big details, and mountain sports. ⛰️✨
-        <br />
-        You can gmail me at <strong>hijennybrooks</strong>.
+        <p>Big fan of accessibility, snacks, little big details, and mountain sports.</p>
+        <p>Let's chat: hijennybrooks@gmail.com</p>
       </footer>
     </main>
   </body>
